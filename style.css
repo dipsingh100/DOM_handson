@@ -1,0 +1,22 @@
+body{
+    background-color: aqua;
+}
+
+.title{
+    text-align: center;
+    color: brown;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+
