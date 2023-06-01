@@ -31,3 +31,23 @@ function changeflex(){
         document.getElementsByClassName("main")[0].style.flexDirection = "row";
 }
 }
+
+function updateTime(){
+  var d = new Date();
+  var zone = "";
+  var time = document.getElementsByClassName("time")[0];
+  var h=d.getHours(), m=d.getMinutes(), s=d.getSeconds();
+  if(h>12){
+    h = h - 12;
+    zone = "PM";
+  }
+  else if(h==0){
+    h = 12;
+    zone = "AM";
+  }
+  else{
+    zone = "AM";
+  }
+  time.textContent = `${h} : ${m} : ${s} ${zone}`;
+}
+setInterval(updateTime, 1000);

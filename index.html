@@ -63,19 +63,58 @@
                     <div class="box box2"></div>
                     <div class="box box3"></div>
                 </div>
-                <button onclick="changeflex()">Replace color</button>
+                <button onclick="changeflex()">Change Flex direction</button>
             </p>
         </div>
         <hr>
         <div class="ques">
             <p>Q8. What’s the difference between window vs document??</p>
             <p>Ans. - 
+                <div class="flexCont">
+                    <div class="flexBox1">
+                        <h1>Window</h1>
+                        <ol>
+                            <li>Represents the global window in a web browser.</li>
+                            <li>Serves as the top-level object in the browser's window hierarchy.</li>
+                            <li>Contains properties and methods related to the browser window, such as dimensions, location, history, and navigation.</li>
+                            <li>Provides access to other global objects, such as document, navigator, and localStorage.</li>
+                            <li>Acts as the execution context for global JavaScript code.</li>
+                            <li>Handles events related to the window, such as load, resize, and scroll.</li>
+                            <li>Can be used to open new browser windows or tabs using methods like open() or close().</li>
+                        </ol>
+                    </div>
+                    <div class="flexBox2">
+                        <h1>Document</h1>
+                        <ol>
+                            <li>Represents the web page loaded within the browser window.</li>
+                            <li>Provides access to the elements and content within the web page.</li>
+                            <li>Contains methods and properties to manipulate and interact with the document's structure, content, and styling.</li>
+                            <li>Enables the selection of HTML elements using various methods like getElementById(), querySelector(), or getElementsByTagName()</li>
+                            <li>Allows modification of element properties, such as text content, HTML markup, styles, and attributes.</li>
+                            <li>Handles events that occur within the document, such as click, submit, or keydown.</li>
+                            <li>Provides methods to create new elements, modify the document structure, or dynamically load external resources.</li>
+                        </ol>
+                    </div>
+                </div>
             </p>
         </div>
         <hr>
         <div class="ques">
             <p>Q9. Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every second?</p>
             <p>Ans. - 
+                <div class="time"></div>
+                <pre>
+                    function updateTime(){
+                        var d = new Date();
+                        var h = document.getElementById("hour");
+                        var m = document.getElementById("minute");
+                        var s = document.getElementById("sec");
+                        h.textContent = d.getHours();
+                        m.textContent = d.getMinutes();
+                        s.textContent = d.getSeconds();
+                      }
+                      setInterval(updateTime, 1000);
+                </pre>
             </p>
         </div>
         <hr>
@@ -83,11 +122,6 @@
             <p>Q10. <a href="https://dipsingh100.github.io/Random_guess_game/">https://dipsingh100.github.io/Random_guess_game/</a></p>
         </div>
         <hr>
-        
-        
-        <h1 class="changeText">Hello World</h1>
-        <button onclick="changeme2()">Replace color</button>
-        
         
     </div>
     <script src="main.js"></script>

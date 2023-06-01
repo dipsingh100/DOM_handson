@@ -1,5 +1,5 @@
 body{
-    background-color: aqua;
+    background-color: rgba(153, 0, 255, 0.37);
 }
 
 .title{
@@ -20,3 +20,32 @@ body{
 }
 
 
+.time{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.flexCont{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flexBox1{
+    /* border: 2px solid black; */
+    width: 50vw;
+    border: 1px solid black;
+}
+.flexBox2{
+    /* border: 2px solid black; */
+    width: 50vw;
+    border: 1px solid black;
+}
+
+.flexBox1>h1{
+    text-align: center;
+}
+
+.flexBox2>h1{
+    text-align: center;
+}
